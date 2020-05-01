@@ -19,9 +19,20 @@ const actions={
         commit('reduce')
     }
 };
+
+const getters = {
+    // 参数是state
+    // theCount: state => {
+    //     return state.money+9;
+    // }
+
+    theCount: state =>  state.money+9
+};
+
 export default {
     namespaced:true,
     state,
     mutations,
-    actions
+    actions,
+    getters
 }

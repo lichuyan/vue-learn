@@ -14,6 +14,9 @@
         <!--<myVuex/>-->
         <pagea/>
         <pageb/>
+        <render></render>
+        <info></info>
+        <request></request>
     </div>
 </template>
 
@@ -25,6 +28,9 @@
 //    import myVuex from './components/vuex.vue';
     import pagea from './components/a.vue';
     import pageb from './components/b.vue';
+    import render from "./components/render";
+    import info from "./mixin/info";
+    import request from "./common/request";
 
     export default {
         name: 'app',
@@ -34,7 +40,10 @@
             com,
 //            myVuex,
             pagea,
-            pageb
+            pageb,
+            render,
+            info,
+            request
         },
         data(){
             return{

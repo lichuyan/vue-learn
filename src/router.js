@@ -16,8 +16,11 @@ const routes = [
 
 // 必须经过实例化
 const router = new VueRouter({
+    mode: 'history',
+    base: process.env.BASE_URL,
     routes // (缩写) 相当于 routes: routes
 });
 
 // 导出
 export default router
+
